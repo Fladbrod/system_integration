@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date Display</title>
+    <script>
+        function displayDate() {
+            function displayDate() {
+                fetch('https://2a25-195-249-146-100.ngrok-free.app/date')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('date').innerHTML = data;
+                    });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Date Display</h1>
+    <p id="date"></p>
+    <button onclick="displayDate()">Show Date</button>
+</body>
+
+</html>
