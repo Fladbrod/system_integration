@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 
-// Serve static files from the current directory
 app.use(express.static("."));
 
 const quotes = [
